@@ -1,0 +1,33 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+
+        // This uhandled exception will be sent to the server and relayed to Seq from the server
+        throw new IndexOutOfRangeException("The page is not allowed to display multiples of 10");
+
+        //try
+        //{
+        //    if (currentCount % 10 == 0)
+        //        throw new IndexOutOfRangeException("The page is not allowed to display multiples of 10");
+        //}
+        //catch (Exception e)
+        //{
+        //    Log.Fatal(e, "Counter Exception");
+        //}
+        //finally
+        //{
+        //    Log.Information($"Incremented count to {currentCount}");
+        //}
+    }
+}

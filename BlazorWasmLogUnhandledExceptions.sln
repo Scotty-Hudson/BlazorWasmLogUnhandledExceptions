@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30428.66
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmLogUnhandledExceptions.Server", "BlazorWasmLogUnhandledExceptions\Server\BlazorWasmLogUnhandledExceptions.Server.csproj", "{5C6512CC-7BB6-4115-A9D2-99CDA36AB7C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmLogUnhandledExceptions.Client", "BlazorWasmLogUnhandledExceptions\Client\BlazorWasmLogUnhandledExceptions.Client.csproj", "{587582F9-89B7-41DE-949F-3AF386E78FF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmLogUnhandledExceptions.Shared", "BlazorWasmLogUnhandledExceptions\Shared\BlazorWasmLogUnhandledExceptions.Shared.csproj", "{278BA6A6-A00F-4E2F-82AB-9DD55535F36A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C6512CC-7BB6-4115-A9D2-99CDA36AB7C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6512CC-7BB6-4115-A9D2-99CDA36AB7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6512CC-7BB6-4115-A9D2-99CDA36AB7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6512CC-7BB6-4115-A9D2-99CDA36AB7C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587582F9-89B7-41DE-949F-3AF386E78FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587582F9-89B7-41DE-949F-3AF386E78FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587582F9-89B7-41DE-949F-3AF386E78FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587582F9-89B7-41DE-949F-3AF386E78FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278BA6A6-A00F-4E2F-82AB-9DD55535F36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278BA6A6-A00F-4E2F-82AB-9DD55535F36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278BA6A6-A00F-4E2F-82AB-9DD55535F36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278BA6A6-A00F-4E2F-82AB-9DD55535F36A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02DC2FE8-DF94-43B1-8E80-7428E4D71B77}
+	EndGlobalSection
+EndGlobal
