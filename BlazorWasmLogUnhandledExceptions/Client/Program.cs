@@ -50,7 +50,6 @@ namespace BlazorWasmLogUnhandledExceptions.Client
                 .Enrich.WithProperty(nameof(AppState.User), AppState.User)
                 .Enrich.WithProperty(nameof(AppState.UserCompany), AppState.UserCompany)
                 .Enrich.WithExceptionDetails()
-                .WriteTo.BrowserConsole()
                 .WriteTo.BrowserHttp(controlLevelSwitch: levelSwitch)
                 .CreateLogger();
         }
