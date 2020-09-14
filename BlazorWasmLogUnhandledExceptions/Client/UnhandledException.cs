@@ -73,11 +73,10 @@ namespace BlazorWasmLogUnhandledExceptions.Client
 
             public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
             {
-                Serilog.Log.Fatal(exception, exception.Message);
-                
-                // I thought this would be a good idea, but...
-                // Blazor doesn't like this blocking call while it is dealing with the exception.
-                //Serilog.Log.CloseAndFlush();                               
+                if (exception != null)
+                {
+                    Serilog.Log.Fatal(exception, exception.Message);   
+                }
             }
 
             public IDisposable BeginScope<TState>(TState state)
